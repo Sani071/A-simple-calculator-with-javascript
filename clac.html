@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calc.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4 col-xl-4"></div>
+            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-4">
+                <form action="" name="calculator">
+                    <p class="title">SANI AHMED</p>
+                    <input type="text" name="screen" disabled>
+                    <br>
+                    <input type="button" value="&radic;" onclick="calculator.screen.value = Math.sqrt(calculator.screen.value)">
+                    <input type="button" value="CE" onclick="calculator.screen.value= ''">
+                    <input type="button" value="C" onclick="calculator.screen.value= ''">
+                    <input type="button" value="&larr;" onclick="calculator.screen.value = calculator.screen.value.slice(0,-1)">
+                    <br>
+                    <input type="button" class="buttonn" value="9" onclick="calculator.screen.value += '9'">
+                    <input type="button" class="buttonn" value="8" onclick="calculator.screen.value += '8'">
+                    <input type="button" class="buttonn" value="7" onclick="calculator.screen.value += '7'">
+                    <input type="button" class="buttonn" value="*" onclick="calculator.screen.value += '*'">
+                    <br>
+                    <input type="button" class="buttonn" value="4" onclick="calculator.screen.value += '4'">
+                    <input type="button" class="buttonn" value="5" onclick="calculator.screen.value += '5'">
+                    <input type="button" value="6" onclick="calculator.screen.value += '6'">
+                    <input type="button" class="buttonn" value="/" onclick="calculator.screen.value += '/'">
+                    <br>
+                    <input type="button" class="buttonn" value="1" onclick="calculator.screen.value += '1'">
+                    <input type="button" class="buttonn" value="2" onclick="calculator.screen.value += '2'">
+                    <input type="button" class="buttonn" value="3" onclick="calculator.screen.value += '3'">
+                    <input type="button" class="buttonn" value="-">
+                    <br>
+                    <input type="button" class="buttonn" value="0" onclick="calculator.screen.value += '0'">
+                    <input type="button" class="buttonn" value="." onclick="calculator.screen.value += '.'">
+                    <input type="button" class="buttonn" value="=" onclick="calculator.screen.value = eval(calculator.screen.value)">
+                    <input type="button" value="+" onclick="calculator.screen.value += '+'">
+                    <br>
+                </form>
+               <p class="sign">rs sani ahmed</p>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4 col-xl-4"></div>
+
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
